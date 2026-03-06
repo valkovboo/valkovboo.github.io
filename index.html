@@ -8,49 +8,80 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
     <script async src="scripts/main.js"></script>
   </head>
   <body>
-    <h1>My first web page</h1>
+    <div class="page">
+      <header class="header">
+        <h1>My first web page</h1>
+        <p class="tagline">A tiny demo of HTML, CSS, and JavaScript</p>
+      </header>
 
-    <p>Instructions for life:</p>
+      <main class="content">
+        <section class="card">
+          <h2>Instructions for life</h2>
+          <ul class="list">
+            <li>Eat</li>
+            <li>Sleep</li>
+            <li>Repeat</li>
+          </ul>
+        </section>
 
-    <ul>
-      <li>Eat</li>
-      <li>Sleep</li>
-      <li>Repeat</li>
-    </ul>
+        <section class="card card--accent">
+          <div class="media">
+            <img
+              src="images/mono-mozilla-firefox.png"
+              alt="The Firefox logo"
+            />
+          </div>
+          <div class="card-body">
+            <h2>My first Firefox page</h2>
+            <p>This is my first web page containing a Firefox logo.</p>
+            <p>At Mozilla, we're a global community of</p>
+            <ul class="list list--inline">
+              <li>technologists</li>
+              <li>thinkers</li>
+              <li>builders</li>
+            </ul>
+            <p>working together…</p>
+            <a
+              class="button-link"
+              href="https://www.mozilla.org/en-US/about/manifesto/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Mozilla Manifesto
+            </a>
+          </div>
+        </section>
 
-    <img src="images/mono-mozilla-firefox.png" alt="The Firefox logo" />
-    <p>This is my first web page containing a Firefox logo.</p>
-    <p>At Mozilla, we're a global community of</p>
+        <section class="card">
+          <h2>Interactive demo</h2>
+          <p>Click the button below to change the user name.</p>
+          <button class="btn-primary">Change user</button>
+        </section>
 
-    <ul>
-      <li>technologists</li>
-      <li>thinkers</li>
-      <li>builders</li>
-    </ul>
+        <section class="card">
+          <h2>Related video</h2>
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/ZOBIPb-6PTc?si=xKKz_VXl5XbaFl0c"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+      </main>
 
-    <p>working together…</p>
-    <a href="https://www.mozilla.org/en-US/about/manifesto/">
-      Mozilla Manifesto
-    </a>
-
-    <button>Change user</button>
-
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/ZOBIPb-6PTc?si=xKKz_VXl5XbaFl0c"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen
-    ></iframe>
+      <footer class="footer">
+        <p>Made with ❤️ while learning the web platform.</p>
+      </footer>
+    </div>
   </body>
 </html>
-
